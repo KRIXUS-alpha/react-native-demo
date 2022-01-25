@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { Button, NativeSyntheticEvent, NativeTouchEvent, ScrollView, StyleSheet, Text, View } from 'react-native';
+import FlatListDemo from './components/FlatListDemo';
+import SectionListDemo from './components/SectionListDemo';
 
 export default function App() {
 
@@ -37,6 +39,8 @@ export default function App() {
           )
           })}
       </ScrollView>
+      <FlatListDemo></FlatListDemo>
+      <SectionListDemo></SectionListDemo>
     </View>
   );
 }
